@@ -1,0 +1,40 @@
+{
+    "id": "pyenv",
+    "name": "Python (from pyenv)",
+    "version": "1.0.0",
+    "description": "Install Pyenv and Python using pyenv.",
+    "options": {
+        "pyenvVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2.4.14",
+                "2.3.36",
+                "2.2.5",
+                "2.1.0",
+                "2.0.7"
+            ],
+            "default": "latest",
+            "description": "Select a version of Pyenv to install"
+        },
+        "pythonVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "3.13",
+                "3.12",
+                "3.11",
+                "3.10",
+                "3.9",
+                "3.8"
+            ],
+            "default": "latest",
+            "description": "Select a version of Python to install"
+        },
+        "optionalPackages": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install optional Python modules"
+        }
+    }
+}
